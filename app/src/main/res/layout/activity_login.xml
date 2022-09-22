@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:src="@drawable/g"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edt_background"
+        android:hint="Email"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:background="@drawable/edt_background"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_pass"
+        android:background="@drawable/btn_background"
+        android:text="Log in"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:background="@drawable/btn_background"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>
